@@ -71,6 +71,27 @@ Built a complete end-to-end Machine Learning web application using Flask and Ran
 
 ---
 
+## Task 4 - Business Optimization using Linear Programming
+
+Developed an optimization model to maximize factory profit using Linear Programming and the PuLP library.
+
+### Features
+- Linear Programming optimization
+- Profit maximization
+- Resource allocation
+- Constraint handling
+- Business insights generation
+- Production planning visualization
+
+### Technologies Used
+- Python
+- PuLP
+- Pandas
+- Matplotlib
+- Jupyter Notebook
+
+---
+
 # Repository Structure
 
 ```text
@@ -81,6 +102,8 @@ CODTECH_Internship/
 ├── Task2_Image_Classification/
 │
 ├── Task3_House_Price_Prediction/
+│
+├── Task4_Optimization_Model/
 │
 ├── README.md
 └── .gitignore
