@@ -1,6 +1,15 @@
-# CODTECH Internship Tasks
+# CODTECH Data Science Internship
 
-This repository contains all internship tasks completed during the CODTECH Data Science Internship.
+This repository contains all tasks completed during the CODTECH Data Science Internship program.
+
+The internship focused on:
+- Data preprocessing
+- Machine learning
+- Deep learning
+- Web deployment
+- Optimization techniques
+- Real-world dataset handling
+- Git and GitHub workflow
 
 ---
 
@@ -36,7 +45,7 @@ Implemented an image classification model using TensorFlow and Keras on the Fash
 - Model training and evaluation
 - Accuracy prediction
 - Clothing classification
-- Model saving
+- Image prediction system
 
 ### Technologies Used
 - Python
@@ -57,7 +66,7 @@ Built a complete end-to-end Machine Learning web application using Flask and Ran
 - Missing value handling
 - Random Forest Regression model
 - Flask web application
-- Modern UI for prediction
+- Modern HTML/CSS user interface
 - Real-time house price prediction
 
 ### Technologies Used
@@ -68,6 +77,16 @@ Built a complete end-to-end Machine Learning web application using Flask and Ran
 - HTML
 - CSS
 - Joblib
+
+### Screenshots
+
+#### Application Interface
+
+![Homepage](Task3_House_Price_Prediction/screenshots/homepage.png)
+
+#### Prediction Result
+
+![Prediction](Task3_House_Price_Prediction/screenshots/prediction.png)
 
 ---
 
@@ -90,6 +109,16 @@ Developed an optimization model to maximize factory profit using Linear Programm
 - Matplotlib
 - Jupyter Notebook
 
+### Screenshots
+
+#### Optimization Output
+
+![Output](Task4_Optimization_Model/screenshots/output.png)
+
+#### Production Visualization
+
+![Graph](Task4_Optimization_Model/screenshots/graph.png)
+
 ---
 
 # Repository Structure
@@ -102,8 +131,52 @@ CODTECH_Internship/
 ├── Task2_Image_Classification/
 │
 ├── Task3_House_Price_Prediction/
+│   ├── screenshots/
+│   └── templates/
 │
 ├── Task4_Optimization_Model/
+│   ├── screenshots/
+│   └── optimization_model.ipynb
 │
 ├── README.md
 └── .gitignore
+```
+
+---
+
+# Internship Learning Outcomes
+
+Through these tasks, the following concepts were learned and implemented:
+
+- Data preprocessing and cleaning
+- Machine learning workflows
+- Deep learning fundamentals
+- Flask deployment
+- Frontend and backend integration
+- Optimization techniques using Linear Programming
+- Data visualization
+- Real-world dataset handling
+- Git and GitHub workflow
+- Project structuring and documentation
+
+---
+
+# Tools and Libraries Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- TensorFlow
+- Keras
+- Flask
+- PuLP
+- Matplotlib
+- Joblib
+- Jupyter Notebook
+
+---
+
+# Author
+
+Keerthi
