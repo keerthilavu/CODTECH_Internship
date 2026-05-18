@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California House Price Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 450px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #444;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .prediction {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>California House Price Prediction</h1>
+        <form action="/predict" method="post">
+            <div class="input-group">
+                <label>Longitude</label>
+                <input type="text" name="longitude" placeholder="Enter Longitude" required>
+            </div>
+            <div class="input-group">
+                <label>Latitude</label>
+                <input type="text" name="latitude" placeholder="Enter Latitude" required>
+            </div>
+            <div class="input-group">
+                <label>Housing Median Age</label>
+                <input type="text" name="housing_median_age" placeholder="Enter House Age" required>
+            </div>
+            <div class="input-group">
+                <label>Total Rooms</label>
+                <input type="text" name="total_rooms" placeholder="Enter Total Rooms" required>
+            </div>
+            <div class="input-group">
+                <label>Total Bedrooms</label>
+                <input type="text" name="total_bedrooms" placeholder="Enter Total Bedrooms" required>
+            </div>
+            <div class="input-group">
+                <label>Population</label>
+                <input type="text" name="population" placeholder="Enter Population" required>
+            </div>
+            <div class="input-group">
+                <label>Households</label>
+                <input type="text" name="households" placeholder="Enter Households" required>
+            </div>
+            <div class="input-group">
+                <label>Median Income</label>
+                <input type="text" name="median_income" placeholder="Enter Median Income" required>
+            </div>
+            <div class="input-group">
+                <label>Ocean Proximity (0-4)</label>
+                <input type="text" name="ocean_proximity" placeholder="Enter Ocean Proximity" required>
+            </div>
+            <button type="submit">Predict House Price</button>
+        </form>
+        <div class="prediction">
+            {{ prediction_text }}
+        </div>
+    </div>
+</body>
+</html>
